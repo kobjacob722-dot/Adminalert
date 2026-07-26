@@ -42,6 +42,7 @@ TextPrompt.Name = "TextPrompt"
 TextPrompt.Parent = Alert
 TextPrompt.AnchorPoint = Vector2.new(0.5, 0)
 TextPrompt.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextPrompt.BackgroundTransparency = 0.7
 TextPrompt.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextPrompt.BorderSizePixel = 0
 TextPrompt.Position = UDim2.new(0.5, 0, 0.739, 0)
