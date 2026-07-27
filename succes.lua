@@ -43,7 +43,7 @@ SuccessTextPrompt.BackgroundTransparency = 0.8
 SuccessTextPrompt.BorderColor3 = Color3.fromRGB(27, 42, 53)
 SuccessTextPrompt.BorderSizePixel = 0
 SuccessTextPrompt.Position = UDim2.new(0.5002618432044983, 0, 0.7391230463981628, 0)
-SuccessTextPrompt.Size = UDim2.new(0.15, 0, 0.05, 0)
+SuccessTextPrompt.Size = UDim2.new(0.949999988, 0, 0.0155236134, 0)
 SuccessTextPrompt.ZIndex = 2
 
 SuccessBorder.Name = "Border"
@@ -124,7 +124,6 @@ s.Parent = workspace
 s:Play()
 
 task.delay(5, function()
-	Alert:Destroy()
 	Success:Destroy()
 	s:Destroy()
 end)
