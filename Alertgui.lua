@@ -40,27 +40,16 @@ if not Prompts then
 	Layout.Parent = Prompts
 end
 
--- Template Prompt Frame
-local TextPrompt = Instance.new("Frame")
-TextPrompt.Name = "TextPrompt"
-TextPrompt.AnchorPoint = Vector2.new(0.5, 0)
-TextPrompt.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-TextPrompt.BackgroundTransparency = 0.7
-TextPrompt.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextPrompt.BorderSizePixel = 0
-TextPrompt.Position = UDim2.new(0.5, 0, 0.739, 0)
-TextPrompt.Size = UDim2.new(1, 0, 0.06, 0)
-TextPrompt.ZIndex = 2
-TextPrompt.Visible = false
-
+-- Template Prompt (TextLabel serves as main container)
 local Label = Instance.new("TextLabel")
 Label.Name = "Label"
-Label.AnchorPoint = Vector2.new(0.5, 0.5)
-Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1
-Label.Position = UDim2.new(0.5, 0, 0.5, 0)
-Label.Size = UDim2.new(1, 0, 1, 0)
-Label.ZIndex = 3
+Label.AnchorPoint = Vector2.new(0.5, 0)
+Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Label.BackgroundTransparency = 0.7
+Label.BorderSizePixel = 0
+Label.Position = UDim2.new(0.5, 0, 0.739, 0)
+Label.Size = UDim2.new(1, 0, 0.06, 0)
+Label.ZIndex = 2
 Label.Font = Enum.Font.SourceSansSemibold
 Label.Text = ""
 Label.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -69,7 +58,7 @@ Label.TextWrapped = true
 Label.TextXAlignment = Enum.TextXAlignment.Center
 Label.TextYAlignment = Enum.TextYAlignment.Center
 Label.ClipsDescendants = true
-Label.Parent = TextPrompt
+Label.Visible = false
 
 local Border = Instance.new("Frame")
 Border.Name = "Border"
@@ -77,7 +66,7 @@ Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Border.BackgroundTransparency = 1
 Border.Size = UDim2.new(1, 0, 1, 0)
 Border.ZIndex = 2
-Border.Parent = TextPrompt
+Border.Parent = Label
 
 local Line = Instance.new("Frame")
 Line.Name = "Line"
@@ -149,11 +138,8 @@ Dot_4.ZIndex = 4
 Dot_4.Parent = Border
 
 -- Spawn individual prompt
-local prompt = TextPrompt:Clone()
-local label = prompt:FindFirstChild("Label")
-if label then
-	label.Text = string.format("%s (%s) is in your game.", username, rankName)
-end
+local prompt = Label:Clone()
+prompt.Text = string.format("%s (%s) is in your game.", username, rankName)
 prompt.Visible = true
 prompt.Parent = Prompts
 
