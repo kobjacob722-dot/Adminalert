@@ -23,7 +23,7 @@ if not Prompts then
 	Prompts = Instance.new("Frame")
 	Prompts.Name = "Prompts"
 	Prompts.AnchorPoint = Vector2.new(0.5, 0)
-	Prompts.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+	Prompts.BackgroundColor3 = Color3.fromRGB(35, 35, 500)
 	Prompts.BackgroundTransparency = 1
 	Prompts.BorderSizePixel = 0
 	Prompts.Position = UDim2.new(0.5, 0, -3.132302879294002e-07, 0)
