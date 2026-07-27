@@ -44,11 +44,11 @@ end
 local Label = Instance.new("TextLabel")
 Label.Name = "Label"
 Label.AnchorPoint = Vector2.new(0.5, 0)
-Label.BackgroundColor3 = Color3.fromRGB(255, 0, 200)
+Label.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 Label.BackgroundTransparency = 0.7
 Label.BorderSizePixel = 0
 Label.Position = UDim2.new(0.5, 0, 0.739, 0)
-Label.Size = UDim2.new(1, 0, 0.5, 0)
+Label.Size = UDim2.new(1, 0, 0.05, 0)
 Label.ZIndex = 2
 Label.Font = Enum.Font.SourceSansSemibold
 Label.Text = ""
