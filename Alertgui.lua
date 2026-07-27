@@ -27,7 +27,7 @@ if not Prompts then
 	Prompts.BackgroundTransparency = 1
 	Prompts.BorderSizePixel = 0
 	Prompts.Position = UDim2.new(0.5, 0, -3.132302879294002e-07, 0)
-	Prompts.Size = UDim2.new(0.2, 0, 0.7890006303787231, 0)
+	Prompts.Size = UDim2.new(0.129753798, 0, 0.0378565826, 0)
 	Prompts.ZIndex = 2
 	Prompts.Parent = Alert
 
