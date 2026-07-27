@@ -27,7 +27,7 @@ if not Prompts then
 	Prompts.BackgroundTransparency = 1
 	Prompts.BorderSizePixel = 0
 	Prompts.Position = UDim2.new(0.5, 0, -3.132302879294002e-07, 0)
-	Prompts.Size = UDim2.new(0.2, 0, 0.7890006303787231, 0)
+	Prompts.Size = UDim2.new(0.129753798, 0, 0.0378565826, 0)
 	Prompts.ZIndex = 2
 	Prompts.Parent = Alert
 
@@ -48,8 +48,8 @@ TextPrompt.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 TextPrompt.BackgroundTransparency = 0.7
 TextPrompt.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextPrompt.BorderSizePixel = 0
-TextPrompt.Position = UDim2.new(0.500261843, 0, 0.739123046, 0)
-TextPrompt.Size = UDim2.new(1, 0, 0.05, 0)
+TextPrompt.Position = UDim2.new(0.5, 0, 0.739, 0)
+TextPrompt.Size = UDim2.new(1, 0, 0.06, 0)
 TextPrompt.ZIndex = 2
 TextPrompt.Visible = false
 
@@ -57,16 +57,18 @@ local Label = Instance.new("TextLabel")
 Label.Name = "Label"
 Label.AnchorPoint = Vector2.new(0.5, 0.5)
 Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1.000
+Label.BackgroundTransparency = 1
 Label.Position = UDim2.new(0.5, 0, 0.5, 0)
 Label.Size = UDim2.new(1, 0, 1, 0)
 Label.ZIndex = 3
 Label.Font = Enum.Font.SourceSansSemibold
 Label.Text = ""
 Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-Label.TextSize = 20.000
+Label.TextSize = 20
 Label.TextWrapped = true
-Label.TextYAlignment = Enum.TextYAlignment.Top
+Label.TextXAlignment = Enum.TextXAlignment.Center
+Label.TextYAlignment = Enum.TextYAlignment.Center
+Label.ClipsDescendants = true
 Label.Parent = TextPrompt
 
 local Border = Instance.new("Frame")
