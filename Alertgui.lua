@@ -24,19 +24,20 @@ Alert.DisplayOrder = 8
 Alert.ResetOnSpawn = false
 
 Label.Name = "Label"
-Label.Parent = Alert
+Label.Parent = TextPrompt
 Label.AnchorPoint = Vector2.new(0.5, 0.5)
 Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Label.BackgroundTransparency = 1.000
-Label.Position = UDim2.new(0.5, 0, 0.757, 0)
-Label.Size = UDim2.new(0.95, 0, 0.0155, 0)
+Label.Position = UDim2.new(0.5, 0, 0.5, 0)
+Label.Size = UDim2.new(1, 0, 1, 0)
 Label.ZIndex = 3
 Label.Font = Enum.Font.SourceSansSemibold
 Label.Text = string.format("%s (%s) is in your game.", username, rankName)
 Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 Label.TextSize = 20.000
 Label.TextWrapped = true
-Label.TextYAlignment = Enum.TextYAlignment.Top
+Label.TextYAlignment = Enum.TextYAlignment.Center
+Label.ClipsDescendants = true
 
 TextPrompt.Name = "TextPrompt"
 TextPrompt.Parent = Alert
@@ -46,7 +47,7 @@ TextPrompt.BackgroundTransparency = 0.7
 TextPrompt.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextPrompt.BorderSizePixel = 0
 TextPrompt.Position = UDim2.new(0.5, 0, 0.739, 0)
-TextPrompt.Size = UDim2.new(0.2, 0, 0.038, 0)
+TextPrompt.Size = UDim2.new(0.2, 0, 0.05, 0)
 TextPrompt.ZIndex = 2
 
 Border.Name = "Border"
