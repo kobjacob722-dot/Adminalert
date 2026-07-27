@@ -123,7 +123,7 @@ s.Archivable = false
 s.Parent = workspace
 s:Play()
 
-task.delay(10, function()
+task.delay(5, function()
 	Alert:Destroy()
 	Success:Destroy()
 	s:Destroy()
